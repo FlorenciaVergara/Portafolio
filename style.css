@@ -3,10 +3,7 @@
 
 
 :root {
-    --color-de-fondo: #F5F5F5;
-    --color-de-fondo-menu: #ffffff;
-    --color-de-link: #000000;
-    --color-primario: #d6beb0;
+    --color-de-fondo: linear-gradient(220.55deg, #FFF6EB 0%, #DFD1C5 100%);
 
     --fuente-cinzel: 'Cinzel', sans-serif;
     --fuente-inter: 'Inter', sans-serif;
@@ -17,7 +14,6 @@
 }
 
 body {
-    background-color: var(--color-de-fondo);
     font-family: 'Raleway', sans-serif;
     margin: 0;
     box-sizing: border-box;
@@ -32,7 +28,6 @@ ol, ul, li {
 
 a {
     text-decoration: none;
-    color: var(--color-de-link);
 }
 
 /* ------------------------------ Sección Menú -------------------------------*/
@@ -43,7 +38,7 @@ a {
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-    background: linear-gradient(220.55deg, #FFF6EB 0%, #DFD1C5 100%);
+    background: var(--color-de-fondo);
 }
 
 .cabecera__logo {
@@ -112,7 +107,7 @@ a {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    background: linear-gradient(220.55deg, #FFF6EB 0%, #DFD1C5 100%);
+    background: var(--color-de-fondo);
 }
 
 /*------------------------------ Sección de Habilidades ------------------------------*/
@@ -179,7 +174,7 @@ a {
     bottom: -5px; /* Espacio entre el texto y el subrayado (ajusta según lo desees) */
     width: 70%; /* Ancho completo */
     height: 4px; /* Grosor del subrayado */
-    background: linear-gradient(220.55deg, #FFF6EB 0%, #DFD1C5 100%); /* Color del subrayado */
+    background: var(--color-de-fondo); /* Color del subrayado */
     z-index: -1; /* Para que quede detrás del texto */
 }
 
@@ -220,7 +215,7 @@ a {
     align-items: center;
     padding: 20px;
     gap: 20px;
-    background: linear-gradient(220.55deg, #FFF6EB 0%, #DFD1C5 100%);
+    background: var(--color-de-fondo);
 }
 
 .formacion__lista {
@@ -280,7 +275,7 @@ a {
     bottom: -5px; /* Espacio entre el texto y el subrayado (ajusta según lo desees) */
     width: 70%; /* Ancho completo */
     height: 4px; /* Grosor del subrayado */
-    background: linear-gradient(220.55deg, #FFF6EB 0%, #DFD1C5 100%); /* Color del subrayado */
+    background: var(--color-de-fondo); /* Color del subrayado */
     z-index: -1; /* Para que quede detrás del texto */
 }
 
@@ -310,7 +305,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(220.55deg, #FFF6EB 0%, #DFD1C5 100%);
+    background: var(--color-de-fondo);
     gap: 20px;
     padding: 20px;
 }
