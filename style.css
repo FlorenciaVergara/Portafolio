@@ -28,6 +28,7 @@ ol, ul, li {
 
 a {
     text-decoration: none;
+    color: #202428;
 }
 
 /* ------------------------------ Sección Menú -------------------------------*/
@@ -101,7 +102,6 @@ a {
     gap: 10px;
     text-align: center;
     align-items: center;
-    color: #202428;
 }
 /* ------------------------------ Sección sobre mí ----------------------------------*/
 .sobre-mi{
