@@ -97,6 +97,7 @@ a {
     justify-content: center;
     align-items: center;
     gap: 40px;
+    padding: 0 10px;
 }
 
 .redes__img{
@@ -205,8 +206,11 @@ a {
 }
 
 .aficiones__nombre {
-    margin-top: 10px;
-    font-size: 15px;
+    width: 100%;
+    text-align: center;
+    font-size: 2vw; /* Escala el texto en función del ancho de la ventana */
+    margin-top: 10px; /* Elimina los márgenes predeterminados del párrafo */
+    flex-shrink: 1; /* Permite que el texto se reduzca si es necesario */
 }
 /*------------------------------ Sección de Formacion Academica --------------------------------*/
 .formacion {
