@@ -101,6 +101,7 @@ a {
     gap: 10px;
     text-align: center;
     align-items: center;
+    color: #202428;
 }
 /* ------------------------------ Sección sobre mí ----------------------------------*/
 .sobre-mi{
@@ -157,7 +158,7 @@ a {
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
     align-items: center;
 }
 
@@ -184,7 +185,8 @@ a {
     flex-wrap: wrap;
     gap: 20px;
     list-style: none;
-    padding: 10px;
+    margin: 0;
+    padding: 0;
     width: 100%; /* Ajusta el ancho para dar espacio al título */
     justify-content: center;
     align-items: center;
@@ -203,7 +205,7 @@ a {
 .aficiones__nombre {
     width: 100%;
     text-align: center;
-    font-size: 2vw; /* Escala el texto en función del ancho de la ventana */
+    font-size: 1rem;
     margin-top: 10px; /* Elimina los márgenes predeterminados del párrafo */
     flex-shrink: 1; /* Permite que el texto se reduzca si es necesario */
 }
@@ -234,6 +236,11 @@ a {
     align-items: center; /* Alinea verticalmente */
     gap: 10px; /* Espacio entre el icono y el texto */
     box-sizing: border-box;
+}
+
+.formacion__elemento div{
+    width: 100%;
+    text-align: center;
 }
 
 .formacion__icono {
@@ -363,7 +370,41 @@ a {
         gap: 1rem;
         justify-content: center;
     }
-    
+
+    .formacion__lista {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        flex-direction: row; 
+        justify-content: space-evenly;
+    }
+
+    .contacto{
+        padding: 20px 150px 80px 150px;
+        position: relative;
+    }
+
+    .contacto::after {
+        content: '';
+        background-image: url(/assets/vector-sobre.png); 
+        background-size: contain; 
+        background-repeat: no-repeat;
+        opacity: 0.8;
+        position: absolute;
+        bottom: 0;
+        left: -50px;
+        width: 300px; 
+        height: 300px; 
+        z-index: 0; 
+        mask-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%);
+-webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%);
+      }
+
+    .contacto__formulario {
+        z-index: 1;
+    }
+
 }
 
 /* Pantallas grandes */
@@ -579,7 +620,7 @@ a {
 
     .aficiones__lista {
         gap: 50px;
-        margin: 0;
+        padding: 10px;
         width: 60%; /* Ajusta el ancho para dar espacio al título */
     }
     
@@ -613,16 +654,6 @@ a {
     .formacion__titulo {
         text-align: center;
         font-size: 30px;
-    }
-    
-    .formacion__lista {
-        width: 100%;
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        flex-direction: row; /* Cambia a column si quieres que los elementos se apilen uno debajo del otro */
-        gap: 50px; /* Espacio entre elementos */
-        justify-content: space-evenly;
     }
     
     .formacion__elemento {
@@ -706,23 +737,12 @@ a {
 /*------------------------------ Sección de Contacto ---------------------------------*/
     .contacto{
         padding: 90px;
-        position: relative;
     }
 
     .contacto::after {
-        content: '';
-        background-image: url(/assets/vector-sobre.png); 
-        background-size: contain; 
-        background-repeat: no-repeat;
-        opacity: 0.8;
-        position: absolute;
-        bottom: 0;
         left: 0;
         width: 480px; 
-        height: 480px; 
-        z-index: 0; 
-        mask-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%);
--webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%);
+        height: 480px;
       }
 
     .contacto__titulo{
@@ -732,7 +752,6 @@ a {
     .contacto__formulario {
         width: 400px; /* Ajusta el ancho según tus necesidades */
         margin: 20px auto; /* Centra el formulario */
-        z-index: 1;
     }
 
     .contacto__boton {
