@@ -1,3 +1,4 @@
+![Banner de mi portafolio](/assets/Copia%20de%20Orange%20And%20White%20Gradient%20Workshop%20Banner.png)
 # Portafolio Web de Florencia Vergara
 
 Este es mi portafolio web, diseñado para mostrar mis habilidades y proyectos en desarrollo front-end. La página está construida utilizando **HTML**, **CSS** y **JavaScript**, y cuenta con un formulario de contacto validado.
