@@ -1,0 +1,747 @@
+/* Este repositório base fué creado para ayudarte en caso que no sepas como comenzar, recuerda que el portafolio es tu carta de presentación y debes darle tu cara, por eso te invitamos a personalizarlo según tu estilo y preferencias no te limites apenas al layout propuesto en figma  
+*/
+
+
+:root {
+    --color-de-fondo: #F5F5F5;
+    --color-de-fondo-menu: #ffffff;
+    --color-de-link: #000000;
+    --color-primario: #d6beb0;
+
+    --fuente-cinzel: 'Cinzel', sans-serif;
+    --fuente-inter: 'Inter', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-de-fondo);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+    width: 100%;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+/* ------------------------------ Sección Menú -------------------------------*/
+.cabecera {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background: linear-gradient(220.55deg, #FFF6EB 0%, #DFD1C5 100%);
+}
+
+.cabecera__logo {
+    display: none;
+}
+
+.cabecera__titulo {
+    font-size: 1.2rem;
+}
+
+.navegacion__lista {
+    display: none;
+}
+
+/* ------------------------------ Sección Presentación ------------------------------*/
+.presentacion{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+
+.presentacion__foto{
+    width: 50%;
+    padding-top: 10px;
+    filter: drop-shadow(
+            0 0 20px var(--color-primario)
+        );
+    align-self: center;
+}
+
+.presentacion__contenedor{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.presentacion__titulo{
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.presentacion__subtitulo{
+    font-size: 1rem;
+    margin: 0;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.redes__img{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+/* ------------------------------ Sección sobre mí ----------------------------------*/
+.sobre-mi{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: linear-gradient(220.55deg, #FFF6EB 0%, #DFD1C5 100%);
+}
+
+/*------------------------------ Sección de Habilidades ------------------------------*/
+.habilidades{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.habilidades__lista{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px; /* Ajustar el padding para que el fondo no sea tan ancho */
+    background-color: rgba(214, 190, 176, 0.3); /* Más transparencia */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra más notoria */
+}
+
+.habilidades__elemento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+}
+
+.habilidades__icono{
+    width: 80%;
+}
+
+.habilidades__nombre {
+    margin: 0;
+    padding: 5px 20px;
+    background: #FFF6EB;
+    border-radius: 20px;
+
+}
+/*------------------------------ Sección de Aficiones --------------------------------*/
+.aficiones {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+}
+
+.aficiones__titulo {
+    width: 100%;
+    flex: 1;
+    position: relative;
+}
+
+.aficiones__titulo::after {
+    content: ''; /* Crea un elemento pseudo para el subrayado */
+    position: absolute; /* Posición absoluta dentro del h2 */
+    left: 0; /* Alineado a la izquierda */
+    bottom: -5px; /* Espacio entre el texto y el subrayado (ajusta según lo desees) */
+    width: 70%; /* Ancho completo */
+    height: 4px; /* Grosor del subrayado */
+    background: linear-gradient(220.55deg, #FFF6EB 0%, #DFD1C5 100%); /* Color del subrayado */
+    z-index: -1; /* Para que quede detrás del texto */
+}
+
+.aficiones__lista {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 10px;
+    width: 100%; /* Ajusta el ancho para dar espacio al título */
+    justify-content: center;
+    align-items: center;
+}
+
+.aficiones__elemento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%; /* Esto te permitirá tener dos columnas */
+    border: #d6beb0 solid;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.aficiones__nombre {
+    margin-top: 10px;
+    font-size: 15px;
+}
+/*------------------------------ Sección de Formacion Academica --------------------------------*/
+.formacion {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    background: linear-gradient(220.55deg, #FFF6EB 0%, #DFD1C5 100%);
+}
+
+.formacion__lista {
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Cambia a column si quieres que los elementos se apilen uno debajo del otro */
+    gap: 50px;
+}
+
+.formacion__elemento {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Coloca los íconos y el texto en una fila */
+    align-items: center; /* Alinea verticalmente */
+    gap: 10px; /* Espacio entre el icono y el texto */
+    box-sizing: border-box;
+}
+
+.formacion__icono {
+    background: #ffffff;
+    max-width: 50%; /* Tamaño fijo para los íconos */
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/*------------------------------ Sección de Proyectos --------------------------------*/
+
+.proyectos{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    position: relative;
+}
+
+.proyectos__contenedor{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+}
+
+.proyectos__titulo{
+    font-size: 1.5rem;
+    display: flex;
+    position: relative;
+    display: inline-block;
+}
+
+.proyectos__titulo::after {
+    content: ''; /* Crea un elemento pseudo para el subrayado */
+    position: absolute; /* Posición absoluta dentro del h2 */
+    left: 0; /* Alineado a la izquierda */
+    bottom: -5px; /* Espacio entre el texto y el subrayado (ajusta según lo desees) */
+    width: 70%; /* Ancho completo */
+    height: 4px; /* Grosor del subrayado */
+    background: linear-gradient(220.55deg, #FFF6EB 0%, #DFD1C5 100%); /* Color del subrayado */
+    z-index: -1; /* Para que quede detrás del texto */
+}
+
+.proyectos__imagen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.proyectos__imagen__captura {
+    width: 100%;
+    transition: all 0.5s ease; 
+    border-radius: 20px; 
+    filter: drop-shadow(0 0 10px rgba(22, 66, 119, 0.7));
+}
+
+.proyectos__imagen__texto{
+    background-color: rgba(214, 190, 176, 0.5);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+/*------------------------------ Sección de Contacto ---------------------------------*/
+.contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(220.55deg, #FFF6EB 0%, #DFD1C5 100%);
+    gap: 20px;
+    padding: 20px;
+}
+
+.contacto__formulario {
+    display: flex;
+    flex-direction: column;
+    width: 90%; 
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.contacto__campo {
+    border-radius: 15px; /* Bordes redondeados */
+    background-color: white; /* Fondo blanco */
+    border: 1px solid #ccc; /* Borde gris claro */
+    padding: 15px; /* Espaciado interno */
+    margin-bottom: 30px; /* Espaciado entre campos */
+    font-size: 1rem; /* Tamaño de fuente */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.contacto__boton {
+    border-radius: 15px; /* Bordes redondeados */
+    background-color: rgba(32, 36, 40, 0.9); /* Color con un poco de transparencia */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px; /* Espaciado interno */
+    font-size: 1rem; /* Tamaño de fuente */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* ------------------------------ Responsividad ---------------------------------------*/
+
+/* Tablets y pantallas más grandes */
+@media (min-width: 768px) {
+
+    .cabecera__titulo {
+        font-size: 1.5rem;
+    }
+
+    .presentacion__foto{
+        width: 30%;
+        padding-top: 10px;
+        filter: drop-shadow(
+                0 0 20px var(--color-primario)
+            );
+        align-self: center;
+    }
+
+    .navegacion__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+    }
+    
+}
+
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+    /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
+    
+    /* ------------------------------ Sección Menú -------------------------------*/
+    .cabecera__titulo {
+        font-size: 1.8rem;
+        margin-right: 400px;
+    }
+
+    .navegacion__elemento a{
+        font-size: 1.1rem;
+    }
+
+    .navegacion__lista:hover a:not(:hover){
+        opacity: .7;
+        transform: scale(.85);
+    }
+/* ------------------------------ Sección Presentación ------------------------------*/
+    .presentacion{
+        width: 100%;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 80px;
+        padding: 90px;
+    }
+
+    .presentacion__foto{
+        width: 370px;
+        filter: drop-shadow(
+            0 0 20px var(--color-primario)
+        );
+    }
+
+    .presentacion__titulo{
+        font-size: 30px;
+    }
+
+    .presentacion__subtitulo{
+        font-size: 25px;
+    }
+
+    .redes{
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .redes__img:hover {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+
+    .redes__img{
+        width: 50%;
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-decoration: none;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+/* ------------------------------ Sección sobre mí ----------------------------------*/
+    .sobre-mi{
+        width: 100%;
+        align-items: flex-start;
+        gap: 30px;
+        padding: 90px  400px 90px 90px;
+        position: relative;
+    }
+
+    .sobre-mi::after {
+        content: '';
+        background-image: url(/assets/vector-chica-compu.png); 
+        background-size: contain; 
+        background-repeat: no-repeat;
+        opacity: 0.8;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 500px; 
+        height: 390px; 
+        z-index: 0; 
+        mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%);
+  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%);
+      }
+
+      .sobre-mi__texto{
+        position: relative;
+        z-index: 1; 
+      }
+
+/*------------------------------ Sección de Habilidades ------------------------------*/
+    .habilidades{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 90px 250px ;
+        min-height: 90vh;
+        position: relative;
+    }
+
+    .habilidades::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 200px; /* Ajusta el tamaño del semicírculo según tus necesidades */
+        height: 200px;
+        background: linear-gradient(45deg, rgba(214, 190, 176, 1), rgba(214, 190, 176, 0)); /* Degradado */
+        border-top-right-radius: 200px; /* Solo esquina superior izquierda redondeada */
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        z-index: -1; /* Para que quede detrás del contenido */
+    }
+
+    .habilidades__titulo{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .habilidades__lista{
+        gap: 90px;
+        z-index: 1;
+        padding: 20px 50px; /* Ajustar el padding para que el fondo no sea tan ancho */
+        position: relative; /* Mantener el z-index funcional */
+    }
+
+    .habilidades__elemento{
+        text-align: center;
+        position: relative;
+        display: inline-block;
+    }
+
+    .habilidades__icono{
+        width: 100px;
+        transition: transform 0.3s ease; /* Suaviza el efecto de ampliación */
+    }
+
+    .habilidades__nombre {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        font-size: 14px;
+        margin-top: 10px;
+        color: #333;
+        background-color: rgba(214, 190, 176, 0.8);
+        padding: 10px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -70px; /* Ajustar la posición */
+        white-space: nowrap;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar un efecto 3D */
+      }
+
+      .habilidades__nombre::before {
+        content: "";
+        position: absolute;
+        top: -19px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent transparent rgba(214, 190, 176, 0.8) transparent;
+      }
+      
+      /* Efecto de hover: agrandar la imagen y mostrar el texto */
+      .habilidades__elemento:hover .habilidades__icono {
+        transform: scale(1.2); /* Aumentar el tamaño de la imagen */
+      }
+      
+      .habilidades__elemento:hover .habilidades__nombre {
+        opacity: 1; /* Mostrar el texto al hacer hover */
+      }
+    
+      /*------------------------------ Sección de Aficiones --------------------------------*/
+      .aficiones {
+        position: relative;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 90px;
+    }
+
+    .aficiones::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200px; /* Ajusta el tamaño del semicírculo según tus necesidades */
+        height: 200px;
+        background:  linear-gradient(135deg, rgba(214, 190, 176, 1), rgba(214, 190, 176, 0)); /* Degradado */
+        border-top-right-radius: 0; /* Solo esquina superior izquierda redondeada */
+        border-bottom-right-radius: 200px;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        z-index: -1; /* Para que quede detrás del contenido */
+    }
+    
+    .aficiones__titulo {
+        font-size: 30px;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        display: inline-block;
+    }
+    
+    .aficiones__titulo::after {
+        width: 100%;
+    }
+    
+
+    .aficiones__lista {
+        gap: 50px;
+        margin: 0;
+        width: 60%; /* Ajusta el ancho para dar espacio al título */
+    }
+    
+    .aficiones__elemento {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%; /* Esto te permitirá tener dos columnas */
+        border: #d6beb0 solid;
+        border-radius: 20px;
+        padding: 30px;
+    }
+    
+    .aficiones__icono {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .aficiones__nombre {
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+/*------------------------------ Sección de Formacion --------------------------------*/
+    .formacion {
+        position: relative;
+        padding: 90px;
+        gap: 40px;
+    }
+    
+    .formacion__titulo {
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    .formacion__lista {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        flex-direction: row; /* Cambia a column si quieres que los elementos se apilen uno debajo del otro */
+        gap: 50px; /* Espacio entre elementos */
+        justify-content: space-evenly;
+    }
+    
+    .formacion__elemento {
+        flex-grow: 1;
+    }
+    
+    .formacion__icono {
+        background: #ffffff;
+        max-width: 60%; /* Tamaño fijo para los íconos */
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+    
+    .formacion::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 200px; /* Ajusta el tamaño del semicírculo según tus necesidades */
+        height: 200px;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); /* Degradado */
+        border-top-right-radius: 0; /* Solo esquina superior izquierda redondeada */
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 200px;
+        z-index: 1; /* Para que quede detrás del contenido */
+    }
+/*------------------------------ Sección de Proyectos --------------------------------*/
+    .proyectos{
+        gap: 80px;
+        padding: 90px;
+        position: relative;
+    }
+
+    .proyectos__contenedor{
+        display: flex;
+        flex-direction: row;
+        gap: 70px;
+    }
+
+    .proyectos__titulo{
+        font-size: 30px;
+    }
+
+    .proyectos__imagen {
+        position: relative;
+        display: inline-block;
+        overflow: visible; 
+        border-radius: 20px; 
+    }
+    
+    .proyectos__imagen:hover .proyectos__imagen__captura {
+        filter: blur(5px); /* Efecto difuminado al pasar el cursor */
+    }
+    
+    .proyectos__imagen__texto {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px 20px;
+        background: linear-gradient(135deg, #164277 0%, #164277 100%); /* Degradado en la burbuja */
+        border-radius: 10px; 
+        opacity: 0; 
+        transition: all 0.5s ease; 
+    }
+    
+    .proyectos__imagen:hover .proyectos__imagen__texto {
+        opacity: 1; /* Aparece al pasar el cursor */
+    }
+
+    .proyectos__nombre{
+        font-size: 1.5rem;
+    }
+/*------------------------------ Sección de Contacto ---------------------------------*/
+    .contacto{
+        padding: 90px;
+        position: relative;
+    }
+
+    .contacto::after {
+        content: '';
+        background-image: url(/assets/vector-sobre.png); 
+        background-size: contain; 
+        background-repeat: no-repeat;
+        opacity: 0.8;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 480px; 
+        height: 480px; 
+        z-index: 0; 
+        mask-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%);
+-webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%);
+      }
+
+    .contacto__titulo{
+        font-size: 30px;
+    }
+
+    .contacto__formulario {
+        width: 400px; /* Ajusta el ancho según tus necesidades */
+        margin: 20px auto; /* Centra el formulario */
+        z-index: 1;
+    }
+
+    .contacto__boton {
+        cursor: pointer; /* Cambia el cursor al pasar el mouse */
+        transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+    }
+
+    .contacto__boton:hover {
+        background-color: rgba(60, 69, 76, 0.7); /* Color más claro con transparencia al pasar el mouse */
+    }
+}
