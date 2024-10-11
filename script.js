@@ -1,8 +1,5 @@
 //La validación del formulário con javascript es considerada un desafío extra, no es obligatório realizar esta validación para realizar su entrega
 // Inicializar EmailJS
-(function(){
-    emailjs.init('ASM8jncpN9bas1cxq'); // Coloca tu user ID aquí (obtenido de tu cuenta de EmailJS)
-})();
 
 // Capturar el formulario y agregar evento de validación
 document.getElementById('formularioContacto').addEventListener('submit', function(e) {
@@ -44,23 +41,5 @@ function validarCorreo(correo) {
     return regex.test(correo);
 }
 
-// Función para enviar el correo utilizando EmailJS
-function enviarCorreo(nombre, correo, mensaje) {
-    let templateParams = {
-        nombre: nombre,  // Este valor se reemplazará en {{nombre}}
-        correo: correo,  // Este valor se reemplazará en {{correo}}
-        mensaje: mensaje // Este valor se reemplazará en {{mensaje}}
-    };
-
-    // Enviar el correo a través de EmailJS
-    emailjs.send('service_6kou3cr' , "template_sjaom7a", templateParams)
-        .then(function(response) {
-            alert('Correo enviado con éxito!'); // Mensaje de éxito
-            document.getElementById('formularioContacto').reset(); // Limpiar el formulario
-        }, function(error) {
-            console.error('Error al enviar el correo:', error); // Imprimir error en consola
-            alert('Ocurrió un error al enviar el correo: ' + JSON.stringify(error)); // Mensaje de error
-        });
-}
 
 

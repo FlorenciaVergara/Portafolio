@@ -147,15 +147,14 @@
     <!-- Sección de Contacto -->
     <section class="contacto" id="contacto">
         <h2 class="contacto__titulo">Contacto</h2>
-        <form class="contacto__formulario" id="formularioContacto">
-            <input class="contacto__campo" type="text" id="nombre" placeholder="Nombre">
-            <input class="contacto__campo" type="email" id="correo" placeholder="Correo Electrónico">
-            <textarea class="contacto__campo contacto__campo--textarea" id="mensaje" placeholder="Mensaje"></textarea>
+        <form class="contacto__formulario" id="formularioContacto" action="https://formsubmit.co/florencia.e16.a15@gmail.com" method="POST">
+            <input name="nombre" class="contacto__campo" type="text" id="nombre" placeholder="Nombre">
+            <input mame="correo" class="contacto__campo" type="email" id="correo" placeholder="Correo Electrónico">
+            <textarea name="mensaje" class="contacto__campo contacto__campo--textarea" id="mensaje" placeholder="Mensaje"></textarea>
             <button class="contacto__boton" type="submit">Enviar</button>
             <div id="error" style="color: red;"></div> <!-- Elemento para mostrar mensajes de error -->
         </form>
     </section>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
