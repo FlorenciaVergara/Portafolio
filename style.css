@@ -345,7 +345,26 @@ a {
     font-size: 1rem; /* Tamaño de fuente */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
+/* ------------------------------ Seccion footer ---------------------------------------*/
 
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    background: #d6beb0;
+    margin: 0;
+    padding: 5px;
+}
+
+.footer__img{
+    align-self: center;
+}
+
+.footer__texto{
+    font-size: 14px;
+    margin: 0;
+}
 /* ------------------------------ Responsividad ---------------------------------------*/
 
 /* Tablets y pantallas más grandes */
