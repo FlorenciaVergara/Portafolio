@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Fuente del Proyecto Raleway -->
+    <link rel="icon" type="image/png" href="assets/icono_portafolio.png">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-    <title>Mi Portafolio</title>
+    <title>Florencia Vergara | Portafolio</title>
 </head>
 
 <body>
@@ -20,8 +20,8 @@
         <nav class="navegacion">
             <ul class="navegacion__lista">
                 <li class="navegacion__elemento"><a href="#sobre-mi">Sobre mí</a></li>
-                <li class="navegacion__elemento"><a href="#habilidades">Habilidades</a></li>
-                <li class="navegacion__elemento"><a href="#aficiones">Aficiones</a></li>
+                <li class="navegacion__elemento"><a href="#habilidades">Skills</a></li>
+                <li class="navegacion__elemento"><a href="#aficiones">Hobbies</a></li>
                 <li class="navegacion__elemento"><a href="#formacion">Formación</a></li>
                 <li class="navegacion__elemento"><a href="#proyectos">Proyectos</a></li>
                 <li class="navegacion__elemento"><a href="#contacto">Contacto</a></li>
@@ -74,6 +74,14 @@
             <li class="habilidades__elemento">
                 <img class="habilidades__icono" src="assets/icono-css.png" alt="CSS">
                 <p class="habilidades__nombre">CSS</p>
+            </li>
+            <li class="habilidades__elemento">
+                <img class="habilidades__icono" src="assets/icono-git.png" alt="Git">
+                <p class="habilidades__nombre">Git</p>
+            </li>
+            <li class="habilidades__elemento">
+                <img class="habilidades__icono" src="assets/icono-postgresql.png" alt="PostgreSQL">
+                <p class="habilidades__nombre">PostgreSQL</p>
             </li>
         </ul>
     </section>
@@ -134,12 +142,22 @@
         <h2 class="proyectos__titulo">Proyectos</h2>
         <div class="proyectos__contenedor">
             <a href="https://encriptador-de-texto-ten-omega.vercel.app/" class="proyectos__imagen">
-                <img src="assets/encriptador-de-texto.png" alt="Captura del proyecto: Encriptador de texto" class="proyectos__imagen__captura">
-                <span class="proyectos__imagen__texto">Ver proyecto</span>
+                <img src="assets/encriptador-de-texto.png" alt="Captura del proyecto: Encriptador de texto" class="proyectos__imagen__captura  captura_encriptador_texto">
+                <span class="proyectos__imagen__texto ver_encriptador">Ver proyecto</span>
             </a>
-            <div>
+            <div class="proyectos__informacion">
                 <h3 class="proyectos__nombre">Encriptador de texto</h3>
                 <p class="proyectos__descripcion">Una página web que permite encriptar y desencriptar mensajes de texto, desarrollada con <strong>HTML, CSS y JavaScript</strong>. El proyecto fue parte de un challenge de Alura Latam y Oracle.</p>
+            </div>
+        </div>
+        <div class="proyectos__contenedor sonidos_granja">
+            <a href="https://juego-sonidos-de-la-granja.vercel.app/" class="proyectos__imagen">
+                <img src="assets/captura-SonidosDeLaGranja.png" alt="Captura del proyecto: Sonidos de la granja" class="proyectos__imagen__captura captura_sonidos_granja">
+                <span class="proyectos__imagen__texto ver_sonidos">Ver proyecto</span>
+            </a>
+            <div class="proyectos__informacion">
+                <h3 class="proyectos__nombre">Sonidos de la Granja</h3>
+                <p class="proyectos__descripcion">Este proyecto es una página web interactiva con un tablero de animales de granja. Cada imagen responde al clic del usuario reproduciendo su sonido característico, creando una experiencia divertida e inmersiva. Desarrollado con <strong>HTML, CSS y JavaScript</strong>, el diseño es responsivo y apto para distintas pantallas, permitiendo una experiencia fluida en dispositivos móviles y de escritorio.</p>
             </div>
         </div>
     </section>
